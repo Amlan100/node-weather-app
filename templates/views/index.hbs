@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This is from a static file</title>
+	<link rel="icon" href="/weather.png">
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+	<div class="main-content">
+	<h1>{{title}} is accessed by {{name}}</h1>
+	{{>header}}
+	<p>This is the best site for weather data.</p>
+	<form>
+		<input placeholder="Enter address">
+		<button>Search</button>
+	</form>
+
+	<p id="m1"></p>
+	<p id="m2"></p>
+	</div>
+
+	{{>footer}}
+	<script type="text/javascript" src="./js/style.js"></script>
+</body>
+</html>
