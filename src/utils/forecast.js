@@ -11,7 +11,7 @@ const forecast = (lat,longi,callback)=>{
 			callback("Unable to fetch weather data")
 		}
 		else if(response.body.error){
-			callback("No weather data is available for the given location")
+			callback("No weatherr data is available for the given location")
 		}
 		else{
 			const {temperature,precip:precipitation,is_day:daytime,} = response.body.current
