@@ -45,7 +45,7 @@ app.get("/help",(req,resp)=>{
 
 app.get("/about",(req,resp)=>{
 	resp.render("about",{
-		subject: "About the app",
+		subject: "About The app",
 		title: "Gitu" 
 	})
 })
