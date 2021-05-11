@@ -11,6 +11,9 @@ const publicDirectoryPath = path.join(__dirname,"../public")
 const viewsPath = path.join(__dirname,"../templates/views")
 const partialsPath = path.join(__dirname,"../templates/partials")
 
+//setting port for running on heroku
+const port = process.env.PORT || 3000
+
 //setup handlebars engine and views location
 app.set("view engine","hbs")
 app.set("views",viewsPath)
@@ -119,6 +122,6 @@ app.get("*",(req,resp)=>{
 	})
 })
 
-app.listen(3000,()=>{
-	console.log("Server is up and running on port 3000")
+app.listen(port,()=>{
+	console.log("Server is up and running on port "+port)
 })
